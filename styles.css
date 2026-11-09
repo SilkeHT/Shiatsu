@@ -10,7 +10,7 @@
   --naranja: #F07A21;
   --ambar: #F7A93B;
   --salmon: #EE9090;
-  --filete: color-mix(in srgb, var(--tinta) 30%, transparent);
+  --filete: rgba(35, 26, 23, .3);
 
   --display: "Italiana", "Didot", "Bodoni 72", serif;
   --ancha: "Archivo", "Helvetica Neue", Arial, sans-serif;
@@ -79,7 +79,7 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
   position: sticky; top: 0; z-index: 5;
   display: flex; align-items: center; gap: 2rem;
   padding: .6rem var(--pad);
-  background: color-mix(in srgb, var(--crema) 94%, transparent);
+  background: rgba(252, 240, 234, .94);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--filete);
 }
@@ -199,8 +199,8 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 .zone { cursor: pointer; }
 .zone rect { fill: transparent; transition: fill .25s ease; }
 .zone circle { fill: var(--crema); stroke: var(--rosa); stroke-width: 1.6; transition: fill .25s ease, stroke .25s ease, r .25s ease; }
-.zone:hover rect { fill: color-mix(in srgb, var(--salmon) 30%, transparent); }
-.zone.is-active rect { fill: color-mix(in srgb, var(--salmon) 55%, transparent); }
+.zone:hover rect { fill: rgba(238, 144, 144, .3); }
+.zone.is-active rect { fill: rgba(238, 144, 144, .55); }
 .zone.is-active circle { fill: var(--rosa); stroke: var(--rosa); r: 5.5px; }
 
 .zone-list { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 2rem; }
@@ -237,7 +237,7 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
   display: grid; grid-template-columns: 9rem 1px 1fr; gap: clamp(1rem, 4vw, 2.5rem);
   padding: 1.8rem 0;
 }
-.steps li + li { border-top: 1px solid color-mix(in srgb, var(--tinta) 12%, transparent); }
+.steps li + li { border-top: 1px solid rgba(35, 26, 23, .12); }
 .steps li::before { content: ""; grid-column: 2; grid-row: 1; background: var(--filete); }
 .step-label {
   grid-column: 1; grid-row: 1; margin: .5rem 0 0; text-align: right;
