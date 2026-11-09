@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shiatsu en Majadahonda | Raquel Heras</title>
+  <meta name="description" content="Sesiones de shiatsu en Majadahonda (Madrid) con Raquel Heras. Reduce el estrés, mejora la circulación y recupera el equilibrio. Pide cita por WhatsApp.">
+  <meta name="theme-color" content="#FBF3EF">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&text=%E6%8C%87%E5%9C%A7&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio">Raquel Heras<span>terapeuta shiatsu</span></a>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="#que-es">Qué es</a></li>
+        <li><a href="#mapa">Tu cuerpo</a></li>
+        <li><a href="#sesion">La sesión</a></li>
+        <li><a href="#preguntas">Preguntas</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-small" href="#cita">Pedir cita</a>
+  </header>
+
+  <main id="contenido">
+    <!-- Portada -->
+    <section class="hero" id="inicio">
+      <div class="hero-text">
+        <h1>Shiatsu</h1>
+        <p class="hero-place">Sesiones en Majadahonda</p>
+        <p class="hero-lead">Un rato para bajar el ritmo. Presión con los dedos y las palmas, estiramientos suaves y calma para soltar la tensión que llevas encima.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#cita">Pedir cita</a>
+          <a class="btn btn-ghost" href="tel:+34696663229">Llamar al 696 663 229</a>
+        </div>
+      </div>
+      <figure class="hero-art">
+        <img src="assets/sakura-sol.webp" width="540" height="1060" alt="Rama de cerezo en flor sobre un sol rojo">
+        <figcaption class="kanji" lang="ja" aria-describedby="kanji-nota">指圧</figcaption>
+        <p class="kanji-note" id="kanji-nota"><span lang="ja-Latn">shi-atsu</span>: presión con los dedos</p>
+      </figure>
+    </section>
+
+    <!-- Qué es -->
+    <section class="intro" id="que-es">
+      <div class="intro-text">
+        <h2>Un masaje japonés que escucha</h2>
+        <p>El shiatsu nace en Japón a partir de la medicina tradicional oriental. Trabaja sobre los meridianos, los caminos por los que circula la energía vital, el <em>ki</em>, presionando puntos concretos para devolver al cuerpo su equilibrio.</p>
+        <p>Se recibe vestido, tumbado sobre un futón, y cada sesión se adapta a cómo llegas ese día.</p>
+      </div>
+      <div class="benefits">
+        <h3>Lo que puede aportarte</h3>
+        <ul>
+          <li>Reduce el estrés</li>
+          <li>Mejora la circulación</li>
+          <li>Ayuda a la recuperación</li>
+          <li>Proporciona bienestar</li>
+          <li>Devuelve el equilibrio</li>
+          <li>Renueva tu energía</li>
+        </ul>
+      </div>
+      <img class="intro-branch" src="assets/rama-sakura.webp" width="700" height="660" alt="" loading="lazy">
+    </section>
+
+    <!-- Mapa interactivo -->
+    <section class="map" id="mapa" aria-labelledby="mapa-titulo">
+      <div class="map-head">
+        <h2 id="mapa-titulo">¿Dónde notas la tensión?</h2>
+        <p>Toca una zona del cuerpo y te cuento cómo la trabajamos en una sesión.</p>
+      </div>
+
+      <div class="map-body">
+        <svg class="figure" viewBox="0 0 240 480" role="img" aria-labelledby="fig-title">
+          <title id="fig-title">Figura humana de espaldas con los puntos de presión del shiatsu</title>
+          <g class="silhouette">
+            <ellipse cx="120" cy="46" rx="25" ry="31"/>
+            <path id="half" d="M120,310 C114,350 110,400 110,446 C110,456 108,462 98,462 C88,460 86,452 86,440 C82,390 76,340 74,300 C74,276 78,256 80,236 C80,214 76,190 72,168 C66,200 62,240 58,276 C58,284 54,290 48,288 C44,282 45,272 46,262 C50,230 54,190 56,160 C58,140 60,120 68,112 C76,104 92,104 104,100 C107,96 108,90 108,72 L120,72"/>
+            <use href="#half" transform="translate(240 0) scale(-1 1)"/>
+          </g>
+          <path class="meridian" d="M120,96 V300 M106,112 V262 M134,112 V262"/>
+
+          <g class="zone" data-zone="cabeza"><rect x="80" y="8" width="80" height="88" rx="30"/>
+            <circle cx="120" cy="22" r="4"/><circle cx="108" cy="80" r="4"/><circle cx="132" cy="80" r="4"/></g>
+          <g class="zone" data-zone="hombros"><rect x="62" y="97" width="116" height="24" rx="10"/>
+            <circle cx="90" cy="108" r="4"/><circle cx="150" cy="108" r="4"/><circle cx="74" cy="116" r="4"/><circle cx="166" cy="116" r="4"/></g>
+          <g class="zone" data-zone="espalda"><rect x="82" y="122" width="76" height="72" rx="10"/>
+            <circle cx="106" cy="132" r="4"/><circle cx="134" cy="132" r="4"/><circle cx="106" cy="157" r="4"/><circle cx="134" cy="157" r="4"/><circle cx="106" cy="182" r="4"/><circle cx="134" cy="182" r="4"/></g>
+          <g class="zone" data-zone="lumbar"><rect x="80" y="196" width="80" height="88" rx="14"/>
+            <circle cx="106" cy="210" r="4"/><circle cx="134" cy="210" r="4"/><circle cx="106" cy="236" r="4"/><circle cx="134" cy="236" r="4"/><circle cx="120" cy="268" r="4"/></g>
+          <g class="zone" data-zone="brazos"><rect x="40" y="140" width="34" height="152" rx="14"/><rect x="166" y="140" width="34" height="152" rx="14"/>
+            <circle cx="62" cy="200" r="4"/><circle cx="178" cy="200" r="4"/><circle cx="50" cy="276" r="4"/><circle cx="190" cy="276" r="4"/></g>
+          <g class="zone" data-zone="piernas"><rect x="72" y="290" width="96" height="178" rx="14"/>
+            <circle cx="96" cy="340" r="4"/><circle cx="144" cy="340" r="4"/><circle cx="98" cy="395" r="4"/><circle cx="142" cy="395" r="4"/><circle cx="98" cy="448" r="4"/><circle cx="142" cy="448" r="4"/></g>
+        </svg>
+
+        <div class="map-panel">
+          <div class="zone-list" role="group" aria-label="Zonas del cuerpo">
+            <button type="button" data-zone="cabeza" aria-pressed="false">Cabeza y cuello</button>
+            <button type="button" data-zone="hombros" aria-pressed="false">Hombros</button>
+            <button type="button" data-zone="espalda" aria-pressed="false">Espalda alta</button>
+            <button type="button" data-zone="lumbar" aria-pressed="false">Zona lumbar</button>
+            <button type="button" data-zone="brazos" aria-pressed="false">Brazos y manos</button>
+            <button type="button" data-zone="piernas" aria-pressed="false">Piernas y pies</button>
+          </div>
+          <div class="zone-info" aria-live="polite">
+            <p class="zone-empty">Elige una zona para empezar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- La sesión -->
+    <section class="session" id="sesion" aria-labelledby="sesion-titulo">
+      <h2 id="sesion-titulo">Cómo es una sesión</h2>
+      <ol class="steps">
+        <li>
+          <h3>Hablamos</h3>
+          <p>Me cuentas cómo estás, qué te molesta y qué buscas. Así adapto la sesión a ti.</p>
+        </li>
+        <li>
+          <h3>Te tumbas con tu ropa</h3>
+          <p>Sobre un futón, con ropa cómoda. Sin aceites ni cremas.</p>
+        </li>
+        <li>
+          <h3>Presión y estiramientos</h3>
+          <p>Recorro los meridianos con los dedos, las palmas y los codos, siempre a tu ritmo.</p>
+        </li>
+        <li>
+          <h3>Descansas</h3>
+          <p>Unos minutos de calma al final y, si quieres, algún consejo para llevarte a casa.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Preguntas -->
+    <section class="faq" id="preguntas" aria-labelledby="faq-titulo">
+      <h2 id="faq-titulo">Preguntas frecuentes</h2>
+      <details>
+        <summary>¿Duele?</summary>
+        <p>No debería. La presión se ajusta a ti. Algunas zonas pueden estar más sensibles; basta con decírmelo y lo cambio.</p>
+      </details>
+      <details>
+        <summary>¿Qué ropa llevo?</summary>
+        <p>Ropa cómoda y holgada, por ejemplo un pantalón de chándal o unas mallas con una camiseta de algodón. El shiatsu se recibe vestido.</p>
+      </details>
+      <details>
+        <summary>¿Cuánto dura y cuánto cuesta?</summary>
+        <p>Escríbeme por WhatsApp o llámame y te cuento la duración, el precio y los huecos que tengo libres.</p>
+      </details>
+      <details>
+        <summary>¿Hay casos en los que no conviene?</summary>
+        <p>Si estás embarazada, tienes fiebre, una lesión reciente o una enfermedad en tratamiento, coméntamelo antes de la sesión. El shiatsu acompaña, pero no sustituye a tu médico.</p>
+      </details>
+    </section>
+
+    <!-- Cita -->
+    <section class="booking" id="cita" aria-labelledby="cita-titulo">
+      <div class="booking-intro">
+        <h2 id="cita-titulo">Pide tu cita</h2>
+        <p>Rellena lo que quieras y se abrirá WhatsApp con tu mensaje ya escrito. Solo tienes que enviarlo.</p>
+        <ul class="contact">
+          <li><span>Móvil</span><a href="tel:+34696663229">+34 696 663 229</a></li>
+          <li><span>Correo</span><a href="mailto:tushiatsu@gmail.com">tushiatsu@gmail.com</a></li>
+          <li><span>Dónde</span>Majadahonda, Madrid</li>
+        </ul>
+      </div>
+
+      <form class="booking-form" id="form-cita" novalidate>
+        <div class="field">
+          <label for="nombre">Tu nombre</label>
+          <input id="nombre" name="nombre" type="text" autocomplete="given-name">
+        </div>
+
+        <fieldset class="field">
+          <legend>¿Qué te gustaría trabajar?</legend>
+          <div class="chips" id="chips-zonas">
+            <label><input type="checkbox" name="zona" value="cabeza y cuello"><span>Cabeza y cuello</span></label>
+            <label><input type="checkbox" name="zona" value="hombros"><span>Hombros</span></label>
+            <label><input type="checkbox" name="zona" value="espalda alta"><span>Espalda alta</span></label>
+            <label><input type="checkbox" name="zona" value="zona lumbar"><span>Zona lumbar</span></label>
+            <label><input type="checkbox" name="zona" value="brazos y manos"><span>Brazos y manos</span></label>
+            <label><input type="checkbox" name="zona" value="piernas y pies"><span>Piernas y pies</span></label>
+            <label><input type="checkbox" name="zona" value="relajarme sin más"><span>Relajarme sin más</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="field">
+          <legend>¿Cuándo te viene mejor?</legend>
+          <div class="chips">
+            <label><input type="radio" name="horario" value="por las mañanas"><span>Mañanas</span></label>
+            <label><input type="radio" name="horario" value="por las tardes"><span>Tardes</span></label>
+            <label><input type="radio" name="horario" value="cuando haya hueco" checked><span>Me da igual</span></label>
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <label for="nota">Algo más que quieras contarme <span class="optional">(opcional)</span></label>
+          <textarea id="nota" name="nota" rows="3"></textarea>
+        </div>
+
+        <div class="preview">
+          <p class="preview-label">Tu mensaje</p>
+          <p class="preview-text" id="preview" aria-live="polite"></p>
+        </div>
+
+        <div class="form-actions">
+          <a class="btn" id="enviar-wa" href="https://wa.me/34696663229" target="_blank" rel="noopener">Abrir WhatsApp</a>
+          <a class="btn btn-ghost" id="enviar-mail" href="mailto:tushiatsu@gmail.com">Enviar por correo</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-name">Raquel Heras, terapeuta de shiatsu en Majadahonda</p>
+    <p>El shiatsu es una terapia complementaria y no sustituye el diagnóstico ni el tratamiento médico.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
