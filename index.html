@@ -5,22 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Shiatsu en Majadahonda | Raquel Heras</title>
   <meta name="description" content="Sesiones de shiatsu en Majadahonda (Madrid) con Raquel Heras. Reduce el estrés, mejora la circulación y recupera el equilibrio. Pide cita por WhatsApp.">
-  <meta name="theme-color" content="#FBF3EF">
+  <meta name="theme-color" content="#FCF0EA">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&text=%E6%8C%87%E5%9C%A7&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Archivo:wdth,wght@125,500;125,600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400&text=%E6%8C%87%E5%9C%A7&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
 
   <header class="site-header">
-    <a class="brand" href="#inicio">Raquel Heras<span>terapeuta shiatsu</span></a>
+    <a class="logo" href="#inicio">shiatsu</a>
     <nav aria-label="Principal">
       <ul>
-        <li><a href="#que-es">Qué es</a></li>
+        <li><a href="#que-es">El shiatsu</a></li>
         <li><a href="#mapa">Tu cuerpo</a></li>
         <li><a href="#sesion">La sesión</a></li>
         <li><a href="#preguntas">Preguntas</a></li>
@@ -30,49 +30,67 @@
   </header>
 
   <main id="contenido">
-    <!-- Portada -->
-    <section class="hero" id="inicio">
-      <div class="hero-text">
-        <h1>Shiatsu</h1>
-        <p class="hero-place">Sesiones en Majadahonda</p>
-        <p class="hero-lead">Un rato para bajar el ritmo. Presión con los dedos y las palmas, estiramientos suaves y calma para soltar la tensión que llevas encima.</p>
-        <div class="hero-actions">
-          <a class="btn" href="#cita">Pedir cita</a>
-          <a class="btn btn-ghost" href="tel:+34696663229">Llamar al 696 663 229</a>
+
+    <!-- Portada: como la lámina de logotipo -->
+    <section class="panel hero" id="inicio" aria-labelledby="titulo">
+      <p class="band">Terapeuta shiatsu en Majadahonda</p>
+      <div class="hero-grid">
+        <div class="hero-mark">
+          <h1 id="titulo" class="wordmark">shiatsu</h1>
+          <p class="wide">Raquel Heras</p>
+          <p class="wide wide-sm">Presión, calma y equilibrio</p>
+          <p class="hero-lead">Sesiones de shiatsu para bajar el ritmo y soltar la tensión que llevas encima.</p>
+          <div class="actions">
+            <a class="btn" href="#cita">Pedir cita</a>
+            <a class="btn btn-ghost" href="tel:+34696663229">Llamar</a>
+          </div>
         </div>
+        <figure class="hero-art">
+          <img src="assets/sakura-sol.webp" width="540" height="1060" alt="Rama de cerezo en flor sobre un sol rojo">
+          <figcaption><span class="kanji" lang="ja">指圧</span><span class="wide wide-sm">Presión con los dedos</span></figcaption>
+        </figure>
       </div>
-      <figure class="hero-art">
-        <img src="assets/sakura-sol.webp" width="540" height="1060" alt="Rama de cerezo en flor sobre un sol rojo">
-        <figcaption class="kanji" lang="ja" aria-describedby="kanji-nota">指圧</figcaption>
-        <p class="kanji-note" id="kanji-nota"><span lang="ja-Latn">shi-atsu</span>: presión con los dedos</p>
-      </figure>
     </section>
 
-    <!-- Qué es -->
-    <section class="intro" id="que-es">
-      <div class="intro-text">
-        <h2>Un masaje japonés que escucha</h2>
+    <!-- Parte uno -->
+    <section class="divider divider-rosa" aria-hidden="true">
+      <p class="divider-label">Parte uno</p>
+      <p class="divider-title">El shiatsu</p>
+      <p class="divider-label">Parte uno</p>
+    </section>
+
+    <section class="panel" id="que-es" aria-labelledby="que-es-titulo">
+      <p class="band">Qué es</p>
+      <div class="center-copy">
+        <h2 id="que-es-titulo" class="caps">Un masaje japonés que escucha</h2>
         <p>El shiatsu nace en Japón a partir de la medicina tradicional oriental. Trabaja sobre los meridianos, los caminos por los que circula la energía vital, el <em>ki</em>, presionando puntos concretos para devolver al cuerpo su equilibrio.</p>
         <p>Se recibe vestido, tumbado sobre un futón, y cada sesión se adapta a cómo llegas ese día.</p>
       </div>
-      <div class="benefits">
-        <h3>Lo que puede aportarte</h3>
-        <ul>
-          <li>Reduce el estrés</li>
-          <li>Mejora la circulación</li>
-          <li>Ayuda a la recuperación</li>
-          <li>Proporciona bienestar</li>
-          <li>Devuelve el equilibrio</li>
-          <li>Renueva tu energía</li>
+
+      <div class="combos">
+        <h3 class="combos-title caps">Beneficios</h3>
+        <ul class="swatches">
+          <li><span class="sw sw-ambar" aria-hidden="true"></span>Reduce el estrés</li>
+          <li><span class="sw sw-naranja" aria-hidden="true"></span>Mejora la circulación</li>
+          <li><span class="sw sw-crema" aria-hidden="true"></span>Ayuda a la recuperación</li>
+          <li><span class="sw sw-salmon" aria-hidden="true"></span>Proporciona bienestar</li>
+          <li><span class="sw sw-oliva" aria-hidden="true"></span>Devuelve el equilibrio</li>
+          <li><span class="sw sw-rosa" aria-hidden="true"></span>Renueva tu energía</li>
         </ul>
       </div>
-      <img class="intro-branch" src="assets/rama-sakura.webp" width="700" height="660" alt="" loading="lazy">
     </section>
 
-    <!-- Mapa interactivo -->
-    <section class="map" id="mapa" aria-labelledby="mapa-titulo">
-      <div class="map-head">
-        <h2 id="mapa-titulo">¿Dónde notas la tensión?</h2>
+    <!-- Parte dos -->
+    <section class="divider divider-oliva" aria-hidden="true">
+      <p class="divider-label">Parte dos</p>
+      <p class="divider-title">Tu cuerpo</p>
+      <p class="divider-label">Parte dos</p>
+    </section>
+
+    <section class="panel" id="mapa" aria-labelledby="mapa-titulo">
+      <p class="band">Mapa del cuerpo</p>
+      <div class="center-copy">
+        <h2 id="mapa-titulo" class="caps">¿Dónde notas la tensión?</h2>
         <p>Toca una zona del cuerpo y te cuento cómo la trabajamos en una sesión.</p>
       </div>
 
@@ -116,111 +134,132 @@
       </div>
     </section>
 
-    <!-- La sesión -->
-    <section class="session" id="sesion" aria-labelledby="sesion-titulo">
-      <h2 id="sesion-titulo">Cómo es una sesión</h2>
+    <!-- Parte tres -->
+    <section class="divider divider-naranja" aria-hidden="true">
+      <p class="divider-label">Parte tres</p>
+      <p class="divider-title">La sesión</p>
+      <p class="divider-label">Parte tres</p>
+    </section>
+
+    <section class="panel" id="sesion" aria-labelledby="sesion-titulo">
+      <p class="band" id="sesion-titulo">Cómo es una sesión</p>
       <ol class="steps">
         <li>
-          <h3>Hablamos</h3>
-          <p>Me cuentas cómo estás, qué te molesta y qué buscas. Así adapto la sesión a ti.</p>
+          <p class="step-label">Paso uno</p>
+          <div><h3 class="caps">Hablamos</h3>
+          <p>Me cuentas cómo estás, qué te molesta y qué buscas. Así adapto la sesión a ti.</p></div>
         </li>
         <li>
-          <h3>Te tumbas con tu ropa</h3>
-          <p>Sobre un futón, con ropa cómoda. Sin aceites ni cremas.</p>
+          <p class="step-label">Paso dos</p>
+          <div><h3 class="caps">Te tumbas con tu ropa</h3>
+          <p>Sobre un futón, con ropa cómoda. Sin aceites ni cremas.</p></div>
         </li>
         <li>
-          <h3>Presión y estiramientos</h3>
-          <p>Recorro los meridianos con los dedos, las palmas y los codos, siempre a tu ritmo.</p>
+          <p class="step-label">Paso tres</p>
+          <div><h3 class="caps">Presión y estiramientos</h3>
+          <p>Recorro los meridianos con los dedos, las palmas y los codos, siempre a tu ritmo.</p></div>
         </li>
         <li>
-          <h3>Descansas</h3>
-          <p>Unos minutos de calma al final y, si quieres, algún consejo para llevarte a casa.</p>
+          <p class="step-label">Paso cuatro</p>
+          <div><h3 class="caps">Descansas</h3>
+          <p>Unos minutos de calma al final y, si quieres, algún consejo para llevarte a casa.</p></div>
         </li>
       </ol>
     </section>
 
-    <!-- Preguntas -->
-    <section class="faq" id="preguntas" aria-labelledby="faq-titulo">
-      <h2 id="faq-titulo">Preguntas frecuentes</h2>
-      <details>
-        <summary>¿Duele?</summary>
-        <p>No debería. La presión se ajusta a ti. Algunas zonas pueden estar más sensibles; basta con decírmelo y lo cambio.</p>
-      </details>
-      <details>
-        <summary>¿Qué ropa llevo?</summary>
-        <p>Ropa cómoda y holgada, por ejemplo un pantalón de chándal o unas mallas con una camiseta de algodón. El shiatsu se recibe vestido.</p>
-      </details>
-      <details>
-        <summary>¿Cuánto dura y cuánto cuesta?</summary>
-        <p>Escríbeme por WhatsApp o llámame y te cuento la duración, el precio y los huecos que tengo libres.</p>
-      </details>
-      <details>
-        <summary>¿Hay casos en los que no conviene?</summary>
-        <p>Si estás embarazada, tienes fiebre, una lesión reciente o una enfermedad en tratamiento, coméntamelo antes de la sesión. El shiatsu acompaña, pero no sustituye a tu médico.</p>
-      </details>
+    <section class="panel faq" id="preguntas" aria-labelledby="faq-titulo">
+      <p class="band" id="faq-titulo">Preguntas frecuentes</p>
+      <div class="faq-list">
+        <details>
+          <summary>¿Duele?</summary>
+          <p>No debería. La presión se ajusta a ti. Algunas zonas pueden estar más sensibles; basta con decírmelo y lo cambio.</p>
+        </details>
+        <details>
+          <summary>¿Qué ropa llevo?</summary>
+          <p>Ropa cómoda y holgada, por ejemplo un pantalón de chándal o unas mallas con una camiseta de algodón. El shiatsu se recibe vestido.</p>
+        </details>
+        <details>
+          <summary>¿Cuánto dura y cuánto cuesta?</summary>
+          <p>Escríbeme por WhatsApp o llámame y te cuento la duración, el precio y los huecos que tengo libres.</p>
+        </details>
+        <details>
+          <summary>¿Hay casos en los que no conviene?</summary>
+          <p>Si estás embarazada, tienes fiebre, una lesión reciente o una enfermedad en tratamiento, coméntamelo antes de la sesión. El shiatsu acompaña, pero no sustituye a tu médico.</p>
+        </details>
+      </div>
     </section>
 
-    <!-- Cita -->
-    <section class="booking" id="cita" aria-labelledby="cita-titulo">
-      <div class="booking-intro">
-        <h2 id="cita-titulo">Pide tu cita</h2>
-        <p>Rellena lo que quieras y se abrirá WhatsApp con tu mensaje ya escrito. Solo tienes que enviarlo.</p>
-        <ul class="contact">
-          <li><span>Móvil</span><a href="tel:+34696663229">+34 696 663 229</a></li>
-          <li><span>Correo</span><a href="mailto:tushiatsu@gmail.com">tushiatsu@gmail.com</a></li>
-          <li><span>Dónde</span>Majadahonda, Madrid</li>
-        </ul>
+    <!-- Parte cuatro -->
+    <section class="divider divider-salmon" aria-hidden="true">
+      <p class="divider-label">Parte cuatro</p>
+      <p class="divider-title">Tu cita</p>
+      <p class="divider-label">Parte cuatro</p>
+    </section>
+
+    <section class="panel" id="cita" aria-labelledby="cita-titulo">
+      <p class="band">Pide tu cita</p>
+      <div class="booking">
+        <div class="booking-intro">
+          <h2 id="cita-titulo" class="caps">Reserva tu sesión</h2>
+          <p>Rellena lo que quieras y se abrirá WhatsApp con tu mensaje ya escrito. Solo tienes que enviarlo.</p>
+          <dl class="contact">
+            <div><dt>Móvil</dt><dd><a href="tel:+34696663229">+34 696 663 229</a></dd></div>
+            <div><dt>Correo</dt><dd><a href="mailto:tushiatsu@gmail.com">tushiatsu@gmail.com</a></dd></div>
+            <div><dt>Dónde</dt><dd>Majadahonda, Madrid</dd></div>
+          </dl>
+        </div>
+
+        <form class="booking-form" id="form-cita" novalidate>
+          <div class="field">
+            <label for="nombre">Tu nombre</label>
+            <input id="nombre" name="nombre" type="text" autocomplete="given-name">
+          </div>
+
+          <fieldset class="field">
+            <legend>¿Qué te gustaría trabajar?</legend>
+            <div class="chips">
+              <label><input type="checkbox" name="zona" value="cabeza y cuello"><span>Cabeza y cuello</span></label>
+              <label><input type="checkbox" name="zona" value="hombros"><span>Hombros</span></label>
+              <label><input type="checkbox" name="zona" value="espalda alta"><span>Espalda alta</span></label>
+              <label><input type="checkbox" name="zona" value="zona lumbar"><span>Zona lumbar</span></label>
+              <label><input type="checkbox" name="zona" value="brazos y manos"><span>Brazos y manos</span></label>
+              <label><input type="checkbox" name="zona" value="piernas y pies"><span>Piernas y pies</span></label>
+              <label><input type="checkbox" name="zona" value="relajarme sin más"><span>Relajarme sin más</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="field">
+            <legend>¿Cuándo te viene mejor?</legend>
+            <div class="chips">
+              <label><input type="radio" name="horario" value="por las mañanas"><span>Mañanas</span></label>
+              <label><input type="radio" name="horario" value="por las tardes"><span>Tardes</span></label>
+              <label><input type="radio" name="horario" value="cuando haya hueco" checked><span>Me da igual</span></label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="nota">Algo más que quieras contarme <span class="optional">(opcional)</span></label>
+            <textarea id="nota" name="nota" rows="3"></textarea>
+          </div>
+
+          <div class="preview">
+            <p class="preview-label">Tu mensaje</p>
+            <p class="preview-text" id="preview" aria-live="polite"></p>
+          </div>
+
+          <div class="actions">
+            <a class="btn" id="enviar-wa" href="https://wa.me/34696663229" target="_blank" rel="noopener">Abrir WhatsApp</a>
+            <a class="btn btn-ghost" id="enviar-mail" href="mailto:tushiatsu@gmail.com">Enviar por correo</a>
+          </div>
+        </form>
       </div>
-
-      <form class="booking-form" id="form-cita" novalidate>
-        <div class="field">
-          <label for="nombre">Tu nombre</label>
-          <input id="nombre" name="nombre" type="text" autocomplete="given-name">
-        </div>
-
-        <fieldset class="field">
-          <legend>¿Qué te gustaría trabajar?</legend>
-          <div class="chips" id="chips-zonas">
-            <label><input type="checkbox" name="zona" value="cabeza y cuello"><span>Cabeza y cuello</span></label>
-            <label><input type="checkbox" name="zona" value="hombros"><span>Hombros</span></label>
-            <label><input type="checkbox" name="zona" value="espalda alta"><span>Espalda alta</span></label>
-            <label><input type="checkbox" name="zona" value="zona lumbar"><span>Zona lumbar</span></label>
-            <label><input type="checkbox" name="zona" value="brazos y manos"><span>Brazos y manos</span></label>
-            <label><input type="checkbox" name="zona" value="piernas y pies"><span>Piernas y pies</span></label>
-            <label><input type="checkbox" name="zona" value="relajarme sin más"><span>Relajarme sin más</span></label>
-          </div>
-        </fieldset>
-
-        <fieldset class="field">
-          <legend>¿Cuándo te viene mejor?</legend>
-          <div class="chips">
-            <label><input type="radio" name="horario" value="por las mañanas"><span>Mañanas</span></label>
-            <label><input type="radio" name="horario" value="por las tardes"><span>Tardes</span></label>
-            <label><input type="radio" name="horario" value="cuando haya hueco" checked><span>Me da igual</span></label>
-          </div>
-        </fieldset>
-
-        <div class="field">
-          <label for="nota">Algo más que quieras contarme <span class="optional">(opcional)</span></label>
-          <textarea id="nota" name="nota" rows="3"></textarea>
-        </div>
-
-        <div class="preview">
-          <p class="preview-label">Tu mensaje</p>
-          <p class="preview-text" id="preview" aria-live="polite"></p>
-        </div>
-
-        <div class="form-actions">
-          <a class="btn" id="enviar-wa" href="https://wa.me/34696663229" target="_blank" rel="noopener">Abrir WhatsApp</a>
-          <a class="btn btn-ghost" id="enviar-mail" href="mailto:tushiatsu@gmail.com">Enviar por correo</a>
-        </div>
-      </form>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p class="footer-name">Raquel Heras, terapeuta de shiatsu en Majadahonda</p>
-    <p>El shiatsu es una terapia complementaria y no sustituye el diagnóstico ni el tratamiento médico.</p>
+    <p class="wordmark wordmark-sm">shiatsu</p>
+    <p class="wide wide-sm">Raquel Heras, terapeuta en Majadahonda</p>
+    <p class="disclaimer">El shiatsu es una terapia complementaria y no sustituye el diagnóstico ni el tratamiento médico.</p>
   </footer>
 
   <script src="script.js"></script>

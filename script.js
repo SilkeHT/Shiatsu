@@ -52,7 +52,7 @@
     const marcada = form.querySelector(`input[name="zona"][value="${z.valor}"]`)?.checked;
     info.innerHTML = `
       <div class="zone-card">
-        <h3>${z.titulo}</h3>
+        <h3 class="caps">${z.titulo}</h3>
         <p class="ayuda">${z.ayuda}</p>
         <p>${z.texto}</p>
         <button type="button" class="btn btn-ghost zone-add" data-valor="${z.valor}">
