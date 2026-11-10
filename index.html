@@ -22,6 +22,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Archivo:wdth,wght@125,500;125,600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    "name": "Shiatsu Raquel Heras",
+    "description": "Sesiones de shiatsu en Majadahonda con Raquel Heras, titulada por la Escuela Japonesa de Shiatsu de Madrid.",
+    "url": "https://silkeht.github.io/Shiatsu/",
+    "image": "https://silkeht.github.io/Shiatsu/assets/preview.jpg",
+    "telephone": "+34696663229",
+    "email": "tushiatsu@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Majadahonda", "addressRegion": "Madrid", "addressCountry": "ES" },
+    "priceRange": "55 €",
+    "paymentAccepted": "Bizum, transferencia",
+    "makesOffer": [
+      { "@type": "Offer", "name": "Sesión individual de shiatsu", "price": "55", "priceCurrency": "EUR" },
+      { "@type": "Offer", "name": "Bono de cinco sesiones de shiatsu", "price": "250", "priceCurrency": "EUR" }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -33,6 +52,7 @@
         <li><a href="#que-es">El shiatsu</a></li>
         <li><a href="#mapa">El cuerpo</a></li>
         <li><a href="#sesion">La sesión</a></li>
+        <li><a href="#tarifas">Tarifas</a></li>
         <li><a href="#preguntas">Preguntas</a></li>
       </ul>
     </nav>
@@ -83,6 +103,15 @@
           <li><span class="sw sw-oliva" aria-hidden="true"></span>Restablece el equilibrio</li>
           <li><span class="sw sw-rosa" aria-hidden="true"></span>Renueva la energía</li>
         </ul>
+      </div>
+    </section>
+
+    <section class="panel terapeuta" id="terapeuta" aria-labelledby="terapeuta-titulo">
+      <p class="band">La terapeuta</p>
+      <div class="center-copy">
+        <h2 id="terapeuta-titulo" class="caps">Raquel Heras</h2>
+        <p>Titulada por la Escuela Japonesa de Shiatsu de Madrid, donde se formó con el maestro Onoda.</p>
+        <p>Recibe en su domicilio de Majadahonda, en un espacio sereno dedicado a la práctica, con horario flexible para adaptarse a usted.</p>
       </div>
     </section>
 
@@ -176,6 +205,28 @@
       </ol>
     </section>
 
+    <section class="panel" id="tarifas" aria-labelledby="tarifas-titulo">
+      <p class="band" id="tarifas-titulo">Tarifas</p>
+      <div class="tarifas">
+        <div class="tarifa">
+          <h3 class="caps">Sesión</h3>
+          <p class="precio">55 €</p>
+          <p class="wide wide-sm">Una hora aproximadamente</p>
+        </div>
+        <div class="tarifa">
+          <h3 class="caps">Bono</h3>
+          <p class="precio">250 €</p>
+          <p class="wide wide-sm">Cinco sesiones</p>
+          <p class="wide wide-sm ahorro">Ahorro de 25 €</p>
+        </div>
+      </div>
+      <dl class="condiciones">
+        <div><dt>Pago</dt><dd>Bizum o transferencia</dd></div>
+        <div><dt>Cancelación</dt><dd>Se ruega avisar con 24 horas de antelación</dd></div>
+        <div><dt>Horario</dt><dd>Flexible, a convenir</dd></div>
+      </dl>
+    </section>
+
     <section class="panel faq" id="preguntas" aria-labelledby="faq-titulo">
       <p class="band" id="faq-titulo">Preguntas frecuentes</p>
       <img class="ornamento ornamento-alto" src="assets/botanica-crisantemo.svg" width="100" height="146" alt="">
@@ -190,7 +241,15 @@
         </details>
         <details>
           <summary>¿Cuánto dura y cuál es el precio?</summary>
-          <p>Escríbame por WhatsApp o llámeme y le informaré de la duración, el precio y la disponibilidad.</p>
+          <p>Cada sesión dura aproximadamente una hora y cuesta 55 €. El bono de cinco sesiones cuesta 250 €. El pago se realiza por Bizum o transferencia.</p>
+        </details>
+        <details>
+          <summary>¿Dónde se realizan las sesiones?</summary>
+          <p>En mi domicilio de Majadahonda, en un espacio tranquilo preparado para la práctica. Le facilitaré la dirección exacta al confirmar su cita.</p>
+        </details>
+        <details>
+          <summary>¿Y si no puedo acudir?</summary>
+          <p>Le ruego que me avise con al menos 24 horas de antelación para poder ofrecer el hueco a otra persona.</p>
         </details>
         <details>
           <summary>¿Existen contraindicaciones?</summary>
@@ -214,6 +273,7 @@
             <div><dt>Móvil</dt><dd><a href="tel:+34696663229">+34 696 663 229</a></dd></div>
             <div><dt>Correo</dt><dd><a href="mailto:tushiatsu@gmail.com">tushiatsu@gmail.com</a></dd></div>
             <div><dt>Dónde</dt><dd>Majadahonda, Madrid</dd></div>
+            <div><dt>Horario</dt><dd>Flexible, a convenir</dd></div>
           </dl>
         </div>
 
@@ -222,6 +282,14 @@
             <label for="nombre">Su nombre</label>
             <input id="nombre" name="nombre" type="text" autocomplete="given-name">
           </div>
+
+          <fieldset class="field">
+            <legend>¿Qué desea reservar?</legend>
+            <div class="chips">
+              <label><input type="radio" name="tipo" value="una sesión de shiatsu" checked><span>Sesión individual</span></label>
+              <label><input type="radio" name="tipo" value="el bono de cinco sesiones de shiatsu"><span>Bono de cinco sesiones</span></label>
+            </div>
+          </fieldset>
 
           <fieldset class="field">
             <legend>¿Qué desea trabajar?</legend>

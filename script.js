@@ -96,7 +96,7 @@
     const nota = (datos.get("nota") || "").trim();
 
     let texto = nombre ? `Hola, Raquel. Soy ${nombre}.` : "Hola, Raquel.";
-    texto += " Me gustaría reservar una sesión de shiatsu";
+    texto += ` Me gustaría reservar ${datos.get("tipo") || "una sesión de shiatsu"}`;
     texto += horario === "cuando haya hueco" ? ", cuando tenga disponibilidad." : ` ${horario}.`;
     if (zonasMarcadas.length) texto += `\nMe gustaría trabajar ${lista(zonasMarcadas)}.`;
     if (nota) texto += `\n${nota}`;
