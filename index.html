@@ -34,20 +34,22 @@
     <!-- Portada: como la lámina de logotipo -->
     <section class="panel hero" id="inicio" aria-labelledby="titulo">
       <p class="band">Terapia shiatsu en Majadahonda</p>
-      <div class="hero-mark">
-        <h1 id="titulo" class="wordmark">shiatsu</h1>
-        <p class="wide">Raquel Heras</p>
-        <p class="wide wide-sm">El arte de la presión consciente</p>
-        <p class="hero-lead">Un espacio de calma para escuchar el cuerpo, liberar tensiones y devolver al ki su curso natural.</p>
-        <div class="actions">
-          <a class="btn" href="#cita">Reservar sesión</a>
-          <a class="btn btn-ghost" href="tel:+34696663229">Llamar</a>
+      <div class="hero-row">
+        <img class="hero-side" src="assets/botanica-jarron-a.svg" width="160" height="400" alt="">
+        <div class="hero-mark">
+          <img class="hero-flor-movil" src="assets/botanica-flor.svg" width="140" height="140" alt="">
+          <h1 id="titulo" class="wordmark">shiatsu</h1>
+          <p class="sello-linea"><span class="sello" lang="ja">指圧</span><span class="wide wide-sm">Presión con los dedos</span></p>
+          <p class="wide">Raquel Heras</p>
+          <p class="wide wide-sm">El arte de la presión consciente</p>
+          <p class="hero-lead">Un espacio de calma para escuchar el cuerpo, liberar tensiones y devolver al ki su curso natural.</p>
+          <div class="actions">
+            <a class="btn" href="#cita">Reservar sesión</a>
+            <a class="btn btn-ghost" href="tel:+34696663229">Llamar</a>
+          </div>
         </div>
+        <img class="hero-side" src="assets/botanica-jarron-b.svg" width="160" height="400" alt="">
       </div>
-      <figure class="hero-art">
-        <img src="assets/sakura-sol.webp" width="540" height="1060" alt="Rama de cerezo en flor sobre un sol rojo">
-        <figcaption><span class="kanji" lang="ja">指圧</span><span class="wide wide-sm">Presión con los dedos</span></figcaption>
-      </figure>
     </section>
 
     <!-- Parte uno -->
@@ -58,6 +60,7 @@
     <section class="panel" id="que-es" aria-labelledby="que-es-titulo">
       <p class="band">El origen</p>
       <div class="center-copy">
+        <img class="ornamento" src="assets/botanica-flor.svg" width="140" height="140" alt="">
         <h2 id="que-es-titulo" class="caps">El camino de la presión</h2>
         <p>El shiatsu tiene su origen en Japón y bebe de la medicina tradicional oriental. Mediante la presión de los dedos y las palmas sobre los meridianos, los cauces por los que fluye la energía vital o <em>ki</em>, busca restablecer la armonía entre el cuerpo y la mente.</p>
         <p>Se recibe con ropa cómoda, sobre un futón, y cada sesión se adapta al estado en que usted llega.</p>
@@ -92,11 +95,18 @@
         <svg class="figure" viewBox="0 0 240 480" role="img" aria-labelledby="fig-title">
           <title id="fig-title">Figura humana de espaldas con los puntos de presión del shiatsu</title>
           <g class="silhouette">
-            <ellipse cx="120" cy="46" rx="25" ry="31"/>
             <path id="half" d="M120,310 C114,350 110,400 110,446 C110,456 108,462 98,462 C88,460 86,452 86,440 C82,390 76,340 74,300 C74,276 78,256 80,236 C80,214 76,190 72,168 C66,200 62,240 58,276 C58,284 54,290 48,288 C44,282 45,272 46,262 C50,230 54,190 56,160 C58,140 60,120 68,112 C76,104 92,104 104,100 C107,96 108,90 108,72 L120,72"/>
             <use href="#half" transform="translate(240 0) scale(-1 1)"/>
           </g>
-          <path class="meridian" d="M120,96 V300 M106,112 V262 M134,112 V262"/>
+          <g class="cabello">
+            <ellipse cx="120" cy="46" rx="25" ry="31"/>
+            <ellipse cx="120" cy="15" rx="13" ry="9"/>
+            <path class="raya" d="M120,8 V76"/>
+            <path class="horquilla" d="M103,13 L139,8"/>
+          </g>
+          <path class="meridian" d="M106,112 V262 M134,112 V262"/>
+          <path class="columna" d="M118,80 V300 M122,80 V300"/>
+          <path class="conectores" d="M106,132 H134 M106,157 H134 M106,182 H134 M106,210 H134 M106,236 H134 M90,108 H150"/>
 
           <g class="zone" data-zone="cabeza"><rect x="80" y="8" width="80" height="88" rx="30"/>
             <circle cx="120" cy="22" r="4"/><circle cx="108" cy="80" r="4"/><circle cx="132" cy="80" r="4"/></g>
@@ -161,6 +171,7 @@
 
     <section class="panel faq" id="preguntas" aria-labelledby="faq-titulo">
       <p class="band" id="faq-titulo">Preguntas frecuentes</p>
+      <img class="ornamento ornamento-alto" src="assets/botanica-crisantemo.svg" width="100" height="146" alt="">
       <div class="faq-list">
         <details>
           <summary>¿Es doloroso?</summary>
