@@ -33,7 +33,7 @@
     piernas: {
       titulo: "Piernas y pies",
       ayuda: "Activa la circulación",
-      texto: "Para piernas cansadas o pesadas. El trabajo en piernas y pies activa la circulación y ayuda a sentirse de nuevo enraizado en la tierra.",
+      texto: "Para piernas cansadas o pesadas. El trabajo en piernas y pies activa la circulación y ayuda a sentirte de nuevo enraizado en la tierra.",
       valor: "piernas y pies",
     },
   };
@@ -56,7 +56,7 @@
         <p class="ayuda">${z.ayuda}</p>
         <p>${z.texto}</p>
         <button type="button" class="btn btn-ghost zone-add" data-valor="${z.valor}">
-          ${marcada ? "Incluida en su cita" : "Incluir en mi cita"}
+          ${marcada ? "Incluida en tu cita" : "Incluir en mi cita"}
         </button>
       </div>`;
     if (mover && window.matchMedia("(max-width: 760px)").matches) {
@@ -75,7 +75,7 @@
       casilla.checked = true;
       actualizarMensaje();
     }
-    btn.textContent = "Incluida en su cita";
+    btn.textContent = "Incluida en tu cita";
   });
 
   // Mensaje de cita
@@ -97,7 +97,7 @@
 
     let texto = nombre ? `Hola, Raquel. Soy ${nombre}.` : "Hola, Raquel.";
     texto += ` Me gustaría reservar ${datos.get("tipo") || "una sesión de shiatsu"}`;
-    texto += horario === "cuando haya hueco" ? ", cuando tenga disponibilidad." : ` ${horario}.`;
+    texto += horario === "cuando haya hueco" ? ", cuando tengas disponibilidad." : ` ${horario}.`;
     if (zonasMarcadas.length) texto += `\nMe gustaría trabajar ${lista(zonasMarcadas)}.`;
     if (nota) texto += `\n${nota}`;
 
