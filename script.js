@@ -2,38 +2,38 @@
   const zonas = {
     cabeza: {
       titulo: "Cabeza y cuello",
-      ayuda: "Reduce el estrés",
-      texto: "Para cuando la mente va acelerada, cuesta dormir o la nuca se queda rígida de tanto mirar pantallas. La presión suave en la base del cráneo y a lo largo del cuello ayuda a soltar y a respirar más despacio.",
+      ayuda: "Serena la mente",
+      texto: "Cuando la mente no encuentra descanso, el sueño se vuelve ligero y la nuca se endurece. La presión serena en la base del cráneo invita a soltar y a recuperar una respiración lenta y profunda.",
       valor: "cabeza y cuello",
     },
     hombros: {
       titulo: "Hombros",
-      ayuda: "Proporciona bienestar",
-      texto: "Es donde se queda la carga del día. Trabajar los hombros y la zona entre los omóplatos alivia la sensación de peso y devuelve movilidad a los brazos.",
+      ayuda: "Aporta bienestar",
+      texto: "En los hombros se deposita el peso de los días. Al trabajar esta zona y el espacio entre los omóplatos, la carga se disuelve y los brazos recuperan su libertad.",
       valor: "hombros",
     },
     espalda: {
       titulo: "Espalda alta",
-      ayuda: "Devuelve el equilibrio",
-      texto: "A ambos lados de la columna recorre el meridiano de la vejiga, que en el shiatsu se relaciona con todo el cuerpo. Por eso la espalda es el centro de casi todas las sesiones.",
+      ayuda: "Restablece el equilibrio",
+      texto: "A ambos lados de la columna discurre el meridiano de la vejiga, que en la tradición del shiatsu se vincula con todo el cuerpo. Por ello, la espalda es el centro de casi todas las sesiones.",
       valor: "espalda alta",
     },
     lumbar: {
       titulo: "Zona lumbar",
-      ayuda: "Ayuda a la recuperación",
-      texto: "Para quien pasa muchas horas sentado o de pie. La presión mantenida y los estiramientos suaves relajan la parte baja de la espalda y la pelvis.",
+      ayuda: "Favorece la recuperación",
+      texto: "Para quien pasa largas horas sentado o de pie. La presión sostenida y los estiramientos suaves devuelven amplitud a la zona baja de la espalda y a la pelvis.",
       valor: "zona lumbar",
     },
     brazos: {
       titulo: "Brazos y manos",
-      ayuda: "Renueva tu energía",
-      texto: "Tensión de teclado, de ratón o de trabajo manual. Los meridianos de los brazos terminan en las manos, y trabajarlos deja una sensación de ligereza.",
+      ayuda: "Renueva la energía",
+      texto: "Los meridianos de los brazos culminan en las manos. Trabajarlos alivia la tensión de la labor diaria y deja una sensación de ligereza.",
       valor: "brazos y manos",
     },
     piernas: {
       titulo: "Piernas y pies",
-      ayuda: "Mejora la circulación",
-      texto: "Para piernas cansadas o pesadas. El trabajo en piernas y pies favorece la circulación y te ayuda a sentirte con los pies en la tierra.",
+      ayuda: "Activa la circulación",
+      texto: "Para piernas cansadas o pesadas. El trabajo en piernas y pies activa la circulación y ayuda a sentirse de nuevo enraizado en la tierra.",
       valor: "piernas y pies",
     },
   };
@@ -56,7 +56,7 @@
         <p class="ayuda">${z.ayuda}</p>
         <p>${z.texto}</p>
         <button type="button" class="btn btn-ghost zone-add" data-valor="${z.valor}">
-          ${marcada ? "Añadida a tu cita" : "Añadir a mi cita"}
+          ${marcada ? "Incluida en su cita" : "Incluir en mi cita"}
         </button>
       </div>`;
     if (mover && window.matchMedia("(max-width: 760px)").matches) {
@@ -75,7 +75,7 @@
       casilla.checked = true;
       actualizarMensaje();
     }
-    btn.textContent = "Añadida a tu cita";
+    btn.textContent = "Incluida en su cita";
   });
 
   // Mensaje de cita
@@ -95,9 +95,9 @@
     const horario = datos.get("horario") || "cuando haya hueco";
     const nota = (datos.get("nota") || "").trim();
 
-    let texto = nombre ? `Hola Raquel, soy ${nombre}.` : "Hola Raquel.";
+    let texto = nombre ? `Hola, Raquel. Soy ${nombre}.` : "Hola, Raquel.";
     texto += " Me gustaría reservar una sesión de shiatsu";
-    texto += horario === "cuando haya hueco" ? ", cuando tengas hueco." : ` ${horario}.`;
+    texto += horario === "cuando haya hueco" ? ", cuando tenga disponibilidad." : ` ${horario}.`;
     if (zonasMarcadas.length) texto += `\nMe gustaría trabajar ${lista(zonasMarcadas)}.`;
     if (nota) texto += `\n${nota}`;
 

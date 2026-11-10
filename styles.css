@@ -52,7 +52,6 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
   padding: .55rem 0;
   border-top: 1px solid var(--filete);
   border-bottom: 1px solid var(--filete);
-  box-shadow: 0 -6px 0 -5px var(--filete);
   text-align: center;
   font-family: var(--ancha); font-stretch: 125%; font-weight: 600;
   text-transform: uppercase; letter-spacing: .24em; font-size: .75rem;
@@ -106,19 +105,15 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 
 /* Portada */
 .hero { padding-top: clamp(1.5rem, 4vw, 2.5rem); }
-.hero-grid {
-  display: grid; grid-template-columns: 1fr 1px 1fr; align-items: center;
-  gap: clamp(1.5rem, 5vw, 5rem);
-}
-.hero-grid::before { content: ""; grid-column: 2; grid-row: 1; align-self: stretch; background: var(--filete); }
-.hero-mark { grid-column: 1; grid-row: 1; text-align: center; }
-.hero-mark .wordmark { font-size: clamp(5rem, 13vw, 10.5rem); color: var(--tinta); }
-.hero-mark .wide { margin-top: 1.2rem; }
+.hero-mark { text-align: center; padding-top: clamp(1rem, 4vw, 3rem); }
+.hero-mark .wordmark { font-size: clamp(5.5rem, 19vw, 15rem); color: var(--tinta); }
+.hero-mark .wide { margin-top: 1.4rem; }
 .hero-mark .wide-sm { margin-top: .6rem; color: var(--tinta-suave); }
-.hero-lead { max-width: 24rem; margin: 2rem auto; color: var(--tinta-suave); font-size: .95rem; }
+.hero-lead { max-width: 28rem; margin: 2rem auto; color: var(--tinta-suave); font-size: 1rem; }
 .hero-mark .actions { justify-content: center; }
-.hero-art { grid-column: 3; grid-row: 1; margin: 0; display: flex; flex-direction: column; align-items: center; gap: 1.2rem; }
-.hero-art img { width: min(100%, 17rem); mix-blend-mode: multiply; }
+.hero-art { margin: clamp(3rem, 7vw, 5rem) 0 0; display: flex; flex-direction: column; align-items: center; gap: 1.2rem; }
+.hero-art::before { content: ""; width: 1px; height: clamp(3rem, 7vw, 5rem); background: var(--filete); margin-bottom: clamp(1.5rem, 4vw, 2.5rem); }
+.hero-art img { width: min(60vw, 17rem); mix-blend-mode: multiply; }
 .hero-art figcaption { display: flex; align-items: center; gap: 1rem; }
 .kanji { font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif; font-size: 1.6rem; letter-spacing: .1em; }
 
@@ -128,27 +123,17 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
   @keyframes aparece { from { opacity: 0; letter-spacing: .12em; } }
   @keyframes florece { from { opacity: 0; transform: translateY(10px) scale(.97); } }
 }
-@media (max-width: 760px) {
-  .hero-grid { grid-template-columns: 1fr; }
-  .hero-grid::before { display: none; }
-  .hero-art { grid-column: 1; grid-row: 2; }
-  .hero-art img { width: min(60vw, 13rem); }
-}
 
 /* Separadores de color a sangre */
 .divider {
-  min-height: clamp(18rem, 52vh, 30rem);
-  display: flex; flex-direction: column; justify-content: space-between; align-items: center;
+  min-height: clamp(12rem, 35vh, 20rem);
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
   padding: 1.6rem var(--pad); text-align: center;
 }
 .divider p { margin: 0; }
-.divider-label {
-  font-family: var(--ancha); font-stretch: 125%; font-weight: 600;
-  text-transform: uppercase; letter-spacing: .26em; font-size: .72rem;
-}
 .divider-title {
   font-family: var(--display); text-transform: uppercase; letter-spacing: .06em;
-  font-size: clamp(2.8rem, 8vw, 6rem); line-height: 1;
+  font-size: clamp(2.4rem, 7vw, 5rem); line-height: 1;
 }
 .divider-rosa { background: var(--rosa); color: var(--crema); }
 .divider-oliva { background: var(--oliva); color: var(--tinta); }
