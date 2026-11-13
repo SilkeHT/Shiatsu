@@ -224,56 +224,6 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
   .swatches { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
-/* Mapa del cuerpo */
-.map-body {
-  max-width: 64rem; margin: 0 auto;
-  display: grid; grid-template-columns: minmax(13rem, 19rem) 1px 1fr; gap: clamp(1.5rem, 5vw, 4rem); align-items: start;
-}
-.map-body::before { content: ""; grid-column: 2; grid-row: 1; align-self: stretch; background: var(--filete); }
-.figure { grid-column: 1; grid-row: 1; width: 100%; height: auto; max-height: 32rem; }
-.map-panel { grid-column: 3; grid-row: 1; }
-.silhouette path, .silhouette use { fill: #F4DCCB; stroke: #C98B6B; stroke-width: 1; }
-.cabello ellipse { fill: #2A2530; }
-.cabello .raya { stroke: #6B6470; stroke-width: .8; }
-.cabello .horquilla { stroke: var(--ambar); stroke-width: 1.6; stroke-linecap: round; }
-.columna { fill: none; stroke: #C98B6B; stroke-width: .9; }
-.conectores { fill: none; stroke: var(--tinta); stroke-width: .7; }
-.meridian { fill: none; stroke: var(--oliva); stroke-width: 1.2; stroke-dasharray: 3 4; }
-.zone { cursor: pointer; }
-.zone rect { fill: transparent; transition: fill .25s ease; }
-.zone circle { fill: var(--beige); stroke: #8C8A3A; stroke-width: 1.4; transition: fill .25s ease, stroke .25s ease, r .25s ease; }
-.zone:hover rect { fill: rgba(238, 144, 144, .3); }
-.zone.is-active rect { fill: rgba(238, 144, 144, .55); }
-.zone.is-active circle { fill: var(--rosa); stroke: var(--rosa); r: 5.5px; }
-
-.zone-list { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 2rem; }
-.zone-list button, .chips span {
-  display: inline-flex; align-items: center; min-height: 44px; padding: .45rem 1rem;
-  font-family: var(--ancha); font-stretch: 125%; font-weight: 500;
-  text-transform: uppercase; letter-spacing: .14em; font-size: .7rem;
-  color: var(--tinta); background: transparent; border: 1px solid var(--filete); cursor: pointer;
-  transition: background-color .2s ease, color .2s ease, border-color .2s ease;
-}
-.zone-list button:hover, .chips label:hover span { border-color: var(--tinta); }
-.zone-list button[aria-pressed="true"] { background: var(--rosa); color: var(--crema); border-color: var(--rosa); }
-
-.zone-info { min-height: 15rem; max-width: 34rem; }
-.zone-empty { color: var(--tinta-suave); font-style: italic; }
-.zone-info h3 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: .6rem; }
-.zone-info .ayuda { margin-bottom: 1.4rem; color: var(--rosa); }
-.zone-info p { color: var(--tinta-suave); }
-@media (prefers-reduced-motion: no-preference) {
-  .zone-card { animation: entra .35s ease both; }
-  @keyframes entra { from { opacity: 0; transform: translateY(6px); } }
-}
-@media (max-width: 760px) {
-  .map-body { grid-template-columns: 1fr; }
-  .map-body::before { display: none; }
-  .figure { max-height: 22rem; }
-  .map-panel { grid-column: 1; grid-row: 2; }
-  .zone-info { min-height: 0; }
-}
-
 /* Pasos, como la lámina de jerarquía tipográfica */
 .steps { list-style: none; margin: 0 auto; padding: 0; max-width: 54rem; }
 .steps li {
@@ -300,13 +250,7 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 .terapeuta { padding-top: 0; padding-bottom: clamp(2.5rem, 6vw, 4rem); }
 
 /* Tarifas, como la lámina de dos marcas separadas por un filete */
-.tarifas {
-  display: grid; grid-template-columns: 1fr 1px 1fr; gap: clamp(1.5rem, 5vw, 4rem);
-  max-width: 50rem; margin: 0 auto 3rem; text-align: center;
-}
-.tarifas::before { content: ""; grid-column: 2; grid-row: 1; background: var(--filete); }
-.tarifa:first-child { grid-column: 1; grid-row: 1; }
-.tarifa:last-child { grid-column: 3; grid-row: 1; }
+.tarifas { max-width: 50rem; margin: 0 auto 3rem; text-align: center; }
 .tarifa h3 { font-size: clamp(1.4rem, 2.8vw, 1.9rem); }
 .precio { font-family: var(--display); font-size: clamp(3.6rem, 9vw, 5.5rem); line-height: 1; margin: 1rem 0 .8rem; color: var(--rosa); }
 .condiciones { max-width: 34rem; margin: 0 auto; }
@@ -317,12 +261,6 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
   text-transform: uppercase; letter-spacing: .2em; font-size: .7rem; padding-top: .25rem;
 }
 .condiciones dd { margin: 0; }
-.tarifa .ahorro { margin-top: .5rem; color: var(--rosa); }
-@media (max-width: 600px) {
-  .tarifas { grid-template-columns: 1fr; row-gap: 2.8rem; }
-  .tarifas::before { display: none; }
-  .tarifa:first-child, .tarifa:last-child { grid-column: 1; grid-row: auto; }
-}
 
 /* Preguntas */
 .faq-list { max-width: 46rem; margin: 0 auto; }
@@ -372,7 +310,14 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 .chips { display: flex; flex-wrap: wrap; gap: .5rem; }
 .chips label { position: relative; cursor: pointer; }
 .chips input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
-.chips span { background: var(--crema); }
+.chips span {
+  display: inline-flex; align-items: center; min-height: 44px; padding: .45rem 1rem;
+  font-family: var(--ancha); font-stretch: 125%; font-weight: 500;
+  text-transform: uppercase; letter-spacing: .14em; font-size: .7rem;
+  color: var(--tinta); background: var(--crema); border: 1px solid var(--filete); cursor: pointer;
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+}
+.chips label:hover span { border-color: var(--tinta); }
 .chips input:checked + span { background: var(--rosa); color: var(--crema); border-color: var(--rosa); }
 .chips input:focus-visible + span { outline: 2px solid var(--rosa); outline-offset: 2px; }
 

@@ -33,11 +33,10 @@
     "telephone": "+34696663229",
     "email": "tushiatsu@gmail.com",
     "address": { "@type": "PostalAddress", "addressLocality": "Majadahonda", "addressRegion": "Madrid", "addressCountry": "ES" },
-    "priceRange": "55 €",
+    "priceRange": "45 €",
     "paymentAccepted": "Bizum, transferencia",
     "makesOffer": [
-      { "@type": "Offer", "name": "Sesión individual de shiatsu", "price": "55", "priceCurrency": "EUR" },
-      { "@type": "Offer", "name": "Bono de cinco sesiones de shiatsu", "price": "250", "priceCurrency": "EUR" }
+      { "@type": "Offer", "name": "Sesión de shiatsu", "price": "45", "priceCurrency": "EUR" }
     ]
   }
   </script>
@@ -50,7 +49,6 @@
     <nav aria-label="Principal">
       <ul>
         <li><a href="#que-es">El shiatsu</a></li>
-        <li><a href="#mapa">El cuerpo</a></li>
         <li><a href="#sesion">La sesión</a></li>
         <li><a href="#tarifas">Tarifas</a></li>
         <li><a href="#preguntas">Preguntas</a></li>
@@ -115,65 +113,6 @@
       </div>
     </section>
 
-    <!-- Parte dos -->
-    <section class="divider divider-oliva" aria-hidden="true">
-      <p class="divider-title">El cuerpo</p>
-    </section>
-
-    <section class="panel" id="mapa" aria-labelledby="mapa-titulo">
-      <p class="band">Mapa del cuerpo</p>
-      <div class="center-copy">
-        <h2 id="mapa-titulo" class="caps">¿Dónde reside la tensión?</h2>
-        <p>Elige una zona del cuerpo para descubrir cómo se trabaja durante la sesión.</p>
-      </div>
-
-      <div class="map-body">
-        <svg class="figure" viewBox="0 0 240 480" role="img" aria-labelledby="fig-title">
-          <title id="fig-title">Figura humana de espaldas con los puntos de presión del shiatsu</title>
-          <g class="silhouette">
-            <path id="half" d="M120,310 C114,350 110,400 110,446 C110,456 108,462 98,462 C88,460 86,452 86,440 C82,390 76,340 74,300 C74,276 78,256 80,236 C80,214 76,190 72,168 C66,200 62,240 58,276 C58,284 54,290 48,288 C44,282 45,272 46,262 C50,230 54,190 56,160 C58,140 60,120 68,112 C76,104 92,104 104,100 C107,96 108,90 108,72 L120,72"/>
-            <use href="#half" transform="translate(240 0) scale(-1 1)"/>
-          </g>
-          <g class="cabello">
-            <ellipse cx="120" cy="46" rx="25" ry="31"/>
-            <ellipse cx="120" cy="15" rx="13" ry="9"/>
-            <path class="raya" d="M120,8 V76"/>
-            <path class="horquilla" d="M103,13 L139,8"/>
-          </g>
-          <path class="meridian" d="M106,112 V262 M134,112 V262"/>
-          <path class="columna" d="M118,80 V300 M122,80 V300"/>
-          <path class="conectores" d="M106,132 H134 M106,157 H134 M106,182 H134 M106,210 H134 M106,236 H134 M90,108 H150"/>
-
-          <g class="zone" data-zone="cabeza"><rect x="80" y="8" width="80" height="88" rx="30"/>
-            <circle cx="120" cy="22" r="4"/><circle cx="108" cy="80" r="4"/><circle cx="132" cy="80" r="4"/></g>
-          <g class="zone" data-zone="hombros"><rect x="62" y="97" width="116" height="24" rx="10"/>
-            <circle cx="90" cy="108" r="4"/><circle cx="150" cy="108" r="4"/><circle cx="74" cy="116" r="4"/><circle cx="166" cy="116" r="4"/></g>
-          <g class="zone" data-zone="espalda"><rect x="82" y="122" width="76" height="72" rx="10"/>
-            <circle cx="106" cy="132" r="4"/><circle cx="134" cy="132" r="4"/><circle cx="106" cy="157" r="4"/><circle cx="134" cy="157" r="4"/><circle cx="106" cy="182" r="4"/><circle cx="134" cy="182" r="4"/></g>
-          <g class="zone" data-zone="lumbar"><rect x="80" y="196" width="80" height="88" rx="14"/>
-            <circle cx="106" cy="210" r="4"/><circle cx="134" cy="210" r="4"/><circle cx="106" cy="236" r="4"/><circle cx="134" cy="236" r="4"/><circle cx="120" cy="268" r="4"/></g>
-          <g class="zone" data-zone="brazos"><rect x="40" y="140" width="34" height="152" rx="14"/><rect x="166" y="140" width="34" height="152" rx="14"/>
-            <circle cx="62" cy="200" r="4"/><circle cx="178" cy="200" r="4"/><circle cx="50" cy="276" r="4"/><circle cx="190" cy="276" r="4"/></g>
-          <g class="zone" data-zone="piernas"><rect x="72" y="290" width="96" height="178" rx="14"/>
-            <circle cx="96" cy="340" r="4"/><circle cx="144" cy="340" r="4"/><circle cx="98" cy="395" r="4"/><circle cx="142" cy="395" r="4"/><circle cx="98" cy="448" r="4"/><circle cx="142" cy="448" r="4"/></g>
-        </svg>
-
-        <div class="map-panel">
-          <div class="zone-list" role="group" aria-label="Zonas del cuerpo">
-            <button type="button" data-zone="cabeza" aria-pressed="false">Cabeza y cuello</button>
-            <button type="button" data-zone="hombros" aria-pressed="false">Hombros</button>
-            <button type="button" data-zone="espalda" aria-pressed="false">Espalda alta</button>
-            <button type="button" data-zone="lumbar" aria-pressed="false">Zona lumbar</button>
-            <button type="button" data-zone="brazos" aria-pressed="false">Brazos y manos</button>
-            <button type="button" data-zone="piernas" aria-pressed="false">Piernas y pies</button>
-          </div>
-          <div class="zone-info" aria-live="polite">
-            <p class="zone-empty">Elige una zona para comenzar.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Parte tres -->
     <section class="divider divider-naranja" aria-hidden="true">
       <p class="divider-title">La sesión</p>
@@ -210,14 +149,8 @@
       <div class="tarifas">
         <div class="tarifa">
           <h3 class="caps">Sesión</h3>
-          <p class="precio">55 €</p>
+          <p class="precio">45 €</p>
           <p class="wide wide-sm">Una hora aproximadamente</p>
-        </div>
-        <div class="tarifa">
-          <h3 class="caps">Bono</h3>
-          <p class="precio">250 €</p>
-          <p class="wide wide-sm">Cinco sesiones</p>
-          <p class="wide wide-sm ahorro">Ahorro de 25 €</p>
         </div>
       </div>
       <dl class="condiciones">
@@ -241,7 +174,7 @@
         </details>
         <details>
           <summary>¿Cuánto dura y cuál es el precio?</summary>
-          <p>Cada sesión dura aproximadamente una hora y cuesta 55 €. El bono de cinco sesiones cuesta 250 €. El pago se realiza por Bizum o transferencia.</p>
+          <p>Cada sesión dura aproximadamente una hora y cuesta 45 €. El pago se realiza por Bizum o transferencia.</p>
         </details>
         <details>
           <summary>¿Dónde se realizan las sesiones?</summary>
@@ -287,14 +220,6 @@
             <label for="nombre">Tu nombre</label>
             <input id="nombre" name="nombre" type="text" autocomplete="given-name">
           </div>
-
-          <fieldset class="field">
-            <legend>¿Qué quieres reservar?</legend>
-            <div class="chips">
-              <label><input type="radio" name="tipo" value="una sesión de shiatsu" checked><span>Sesión individual</span></label>
-              <label><input type="radio" name="tipo" value="el bono de cinco sesiones de shiatsu"><span>Bono de cinco sesiones</span></label>
-            </div>
-          </fieldset>
 
           <fieldset class="field">
             <legend>¿Qué te gustaría trabajar?</legend>
