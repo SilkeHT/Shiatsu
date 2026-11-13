@@ -6,22 +6,15 @@
   const wa = document.getElementById("enviar-wa");
   const mail = document.getElementById("enviar-mail");
 
-  function lista(items) {
-    if (items.length <= 1) return items.join("");
-    return items.slice(0, -1).join(", ") + " y " + items[items.length - 1];
-  }
-
   function actualizarMensaje() {
     const datos = new FormData(form);
     const nombre = (datos.get("nombre") || "").trim();
-    const zonasMarcadas = datos.getAll("zona");
     const horario = datos.get("horario") || "cuando haya hueco";
     const nota = (datos.get("nota") || "").trim();
 
     let texto = nombre ? `Hola, Raquel. Soy ${nombre}.` : "Hola, Raquel.";
     texto += " Me gustaría reservar una sesión de shiatsu";
     texto += horario === "cuando haya hueco" ? ", cuando tengas disponibilidad." : ` ${horario}.`;
-    if (zonasMarcadas.length) texto += `\nMe gustaría trabajar ${lista(zonasMarcadas)}.`;
     if (nota) texto += `\n${nota}`;
 
     preview.textContent = texto;
