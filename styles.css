@@ -224,32 +224,10 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
   .swatches { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
-/* Pasos, como la lámina de jerarquía tipográfica */
-.steps { list-style: none; margin: 0 auto; padding: 0; max-width: 54rem; }
-.steps li {
-  display: grid; grid-template-columns: 9rem 1px 1fr; gap: clamp(1rem, 4vw, 2.5rem);
-  padding: 1.8rem 0;
-}
-.steps li + li { border-top: 1px solid rgba(35, 26, 23, .12); }
-.steps li::before { content: ""; grid-column: 2; grid-row: 1; background: var(--filete); }
-.step-label {
-  grid-column: 1; grid-row: 1; margin: .5rem 0 0; text-align: right;
-  font-family: var(--ancha); font-stretch: 125%; font-weight: 600;
-  text-transform: uppercase; letter-spacing: .2em; font-size: .7rem; color: var(--rosa);
-}
-.steps li > div { grid-column: 3; grid-row: 1; }
-.steps h3 { font-size: clamp(1.7rem, 3.4vw, 2.4rem); margin-bottom: .5rem; }
-.steps li p:not(.step-label) { margin: 0; color: var(--tinta-suave); max-width: 32rem; }
-@media (max-width: 560px) {
-  .steps li { grid-template-columns: 1fr; gap: .4rem; }
-  .steps li::before { display: none; }
-  .step-label, .steps li > div { grid-column: 1; grid-row: auto; text-align: left; }
-}
-
 /* La terapeuta */
 .terapeuta { padding-top: 0; padding-bottom: clamp(2.5rem, 6vw, 4rem); }
 
-/* Tarifas, como la lámina de dos marcas separadas por un filete */
+/* Tarifas */
 .tarifas { max-width: 50rem; margin: 0 auto 3rem; text-align: center; }
 .tarifa h3 { font-size: clamp(1.4rem, 2.8vw, 1.9rem); }
 .precio { font-family: var(--display); font-size: clamp(3.6rem, 9vw, 5.5rem); line-height: 1; margin: 1rem 0 .8rem; color: var(--rosa); }
