@@ -227,16 +227,21 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 /* La terapeuta */
 .terapeuta { padding-top: 0; padding-bottom: clamp(2.5rem, 6vw, 4rem); }
 
-/* Tarifas */
-.tarifas { max-width: 50rem; margin: 0 auto 3rem; text-align: center; }
-.tarifa h3 { font-size: clamp(1.4rem, 2.8vw, 1.9rem); }
-.precio { font-family: var(--display); font-size: clamp(3.6rem, 9vw, 5.5rem); line-height: 1; margin: 1rem 0 .8rem; color: var(--rosa); }
-.condiciones { max-width: 34rem; margin: 0 auto; }
-.condiciones div { display: flex; flex-wrap: wrap; gap: .3rem 1.2rem; padding: .8rem 0; border-top: 1px solid var(--filete); }
-.condiciones div:last-child { border-bottom: 1px solid var(--filete); }
+/* Tarifas: todo centrado, sin filetes */
+.tarifas-panel { text-align: center; }
+.tarifa { margin: 0 auto 2.6rem; }
+.tarifa .wide-sm { color: var(--tinta-suave); }
+.precio {
+  font-family: var(--display); font-size: clamp(5rem, 14vw, 8rem); line-height: 1;
+  margin: 1.4rem 0 1.2rem; color: var(--rosa); font-variant-numeric: lining-nums;
+}
+.precio { display: inline-block; position: relative; }
+.precio span { position: absolute; left: 100%; top: .05em; font-size: .55em; margin-left: .08em; }
+.condiciones { margin: 0 auto; display: grid; gap: 1rem; }
+.condiciones div { display: flex; flex-direction: column; align-items: center; gap: .2rem; }
 .condiciones dt {
-  min-width: 9rem; font-family: var(--ancha); font-stretch: 125%; font-weight: 600;
-  text-transform: uppercase; letter-spacing: .2em; font-size: .7rem; padding-top: .25rem;
+  font-family: var(--ancha); font-stretch: 125%; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .2em; font-size: .7rem;
 }
 .condiciones dd { margin: 0; }
 
