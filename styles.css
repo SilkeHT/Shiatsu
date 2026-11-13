@@ -297,7 +297,6 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 }
 
 /* La terapeuta */
-.retrato { display: block; width: min(15rem, 60vw); height: auto; margin: 0 auto 2rem; }
 .terapeuta { padding-top: 0; padding-bottom: clamp(2.5rem, 6vw, 4rem); }
 
 /* Tarifas, como la lámina de dos marcas separadas por un filete */
@@ -339,6 +338,9 @@ h1, h2, h3 { margin: 0; font-weight: 400; }
 .faq summary::after { content: "+"; font-family: var(--texto); font-weight: 400; font-size: 1.5rem; color: var(--rosa); transition: transform .25s ease; }
 .faq details[open] summary::after { transform: rotate(45deg); }
 .faq details p { color: var(--tinta-suave); max-width: 36rem; }
+.faq-lista { margin: -.4rem 0 1.4rem; padding-left: 1.2rem; color: var(--tinta-suave); max-width: 36rem; }
+.faq-lista li { margin-bottom: .5rem; }
+.faq-lista li::marker { color: var(--rosa); }
 
 /* Cita */
 .booking { display: grid; grid-template-columns: 1fr 1.3fr; gap: clamp(2rem, 6vw, 5rem); }
